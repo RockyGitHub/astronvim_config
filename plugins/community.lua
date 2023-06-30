@@ -1,9 +1,8 @@
 return {
-  -- Add the community repository of plugin specifications
-  "AstroNvim/astrocommunity",
-  -- example of imporing a plugin, comment out to use it or add your own
-  -- available plugins can be found at https://github.com/AstroNvim/astrocommunity
-
-  -- { import = "astrocommunity.colorscheme.catppuccin" },
-  -- { import = "astrocommunity.completion.copilot-lua-cmp" },
+    "AstroNvim/astrocommunity",
+    { import = "astrocommunity.pack.rust" },
+    { import = "astrocommunity.colorscheme.catppuccin", enabled = false },
+    { import = "astrocommunity.colorscheme.nightfox-nvim", enabled = true },
+    -- { import = "astrocommunity.completion.copilot-lua-cmp" },
+    -- ... import any community contributed plugins here
 }
